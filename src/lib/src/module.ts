@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 
-import { LibComponent } from './component/lib.component';
-import { LibService } from './service/lib.service';
+import { AdvancedTableComponent } from './component/advanced-table.component';
+// import { LibService } from './service/lib.service';
 
 @NgModule({
-  declarations: [LibComponent],
-  providers: [LibService],
-  exports: [LibComponent]
+  declarations: [AdvancedTableComponent],
+  providers: [/* LibService */],
+  exports: [AdvancedTableComponent]
 })
-export class LibModule { }
+export class AdvancedTableModule { }

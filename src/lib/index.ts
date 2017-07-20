@@ -1,3 +1,3 @@
-export { LibComponent } from './src/component/lib.component';
-export { LibService } from './src/service/lib.service';
-export { LibModule } from './src/module';
+export { AdvancedTableComponent } from './src/component/advanced-table.component';
+// export { LibService } from './src/service/lib.service';
+export { AdvancedTableModule } from './src/module';
