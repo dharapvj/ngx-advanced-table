@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LibService } from 'quickstart-lib';
+import { LibService } from 'ngx-advanced-table';
 
 @Component({
   selector: 'integration-app',

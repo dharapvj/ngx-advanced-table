@@ -1,1 +1,15 @@
-<h2>Hello {{name}}</h2>
+<table>
+  <thead>
+    <tr><th *ngFor="let col of columns" (click)="toggleSort(col)">
+      <span class="header">{{col.display}}</span> <span class="sort-ind {{col.sort}}"></span>
+    </th></tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let d of data; let di = index">
+      <td *ngFor="let c of columns; let ci = index" class="align {{c.align}}">
+        <input *ngIf="c.checkbox" type="checkbox">
+        {{ d[c.attr] }}
+      </td>
+    </tr>
+  </tbody>
+</table>

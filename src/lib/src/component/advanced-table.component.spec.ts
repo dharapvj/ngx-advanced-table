@@ -2,22 +2,22 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { LibComponent } from './lib.component';
+import { AdvancedTableComponent } from './advanced-table.component';
 
-describe('LibComponent', function () {
+describe('AdvancedTableComponent', function () {
   let de: DebugElement;
-  let comp: LibComponent;
-  let fixture: ComponentFixture<LibComponent>;
+  let comp: AdvancedTableComponent;
+  let fixture: ComponentFixture<AdvancedTableComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [LibComponent]
+      declarations: [AdvancedTableComponent]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LibComponent);
+    fixture = TestBed.createComponent(AdvancedTableComponent);
     comp = fixture.componentInstance;
     de = fixture.debugElement.query(By.css('h2'));
   });

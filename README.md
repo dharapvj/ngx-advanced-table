@@ -160,7 +160,7 @@ The following are all in `src/`
       <code>demo/app/app.module.ts</code>
     </td>
     <td>
-      A demo <code>NgModule</code> that imports the Library <code>LibModule</code>.
+      A demo <code>NgModule</code> that imports the Library <code>AdvancedTableModule</code>.
     </td>
   </tr>
   <tr>
@@ -184,7 +184,7 @@ The following are all in `src/`
       <code>lib/src/module.ts</code>
     </td>
     <td>
-      The library's main <code>NgModule</code>, <code>LibModule</code>.
+      The library's main <code>NgModule</code>, <code>AdvancedTableModule</code>.
     </td>
   </tr>
   <tr>
