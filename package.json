@@ -1,14 +1,21 @@
 {
   "name": "ngx-advanced-table",
-  "version": "0.0.9",
-  "description": "Library QuickStart package.json from the documentation, supplemented with testing support",
+  "version": "0.0.10",
+  "description": "A simple yet feature packed Table rendering component for Angular 2+",
   "main": "./bundles/ngx-advanced-table.umd.js",
   "module": "./ngx-advanced-table.es5.js",
   "es2015": "./ngx-advanced-table.js",
   "typings": "./ngx-advanced-table.d.ts",
   "author": "Vijay Dharap <vj4tech@gmail.com>",
   "license": "MIT",
-  "repository": {},
+  "repository": "dharapvj/ngx-advanced-table",
+  "keywords": [
+    "angular",
+    "component",
+    "table",
+    "sorting",
+    "columns"
+  ],
   "engines": {
     "node": ">= 6.9.0",
     "npm": ">= 3.0.0"

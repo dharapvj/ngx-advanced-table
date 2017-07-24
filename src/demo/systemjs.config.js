@@ -25,7 +25,7 @@
 
       // other libraries
       'rxjs': 'npm:rxjs',
-      'lodash': 'npm:lodash/lodash.min.js',
+      'lodash-es': 'npm:lodash/lodash.js',
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -40,7 +40,8 @@
       rxjs: {
         defaultExtension: 'js'
       },
-      'lodash': { 
+      'lodash': {
+        main:'index.js',
         defaultExtension: 'js'
       },
       'ngx-advanced-table': {

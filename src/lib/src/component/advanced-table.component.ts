@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-// import { orderBy as _orderBy, map as _.map, find as _find } from 'lodash';
-import * as _ from 'lodash';
+// import { orderBy as _orderBy, map as _map, find as _find } from 'lodash';
+// import * as _ from 'lodash';
+import { orderBy as _orderBy, map as _map, find as _find } from 'lodash-es';
 
 import { SortInfo, Column, Align } from './table-def';
 
@@ -30,13 +31,13 @@ export class AdvancedTableComponent implements OnInit {
     this._columns = this.columns as InColumn[];
 
     // sort..
-    // console.log('before sort', this.data, _.map(this.sortInfo, 'attr'));
-    this.data = _.orderBy(this.data,
-      _.map(this.sortInfo, 'attr'),
-      _.map(this.sortInfo, 'sortDir'));
+    // console.log('before sort', this.data, _map(this.sortInfo, 'attr'));
+    this.data = _orderBy(this.data,
+      _map(this.sortInfo, 'attr'),
+      _map(this.sortInfo, 'sortDir'));
     // console.log('after sort', this.data);
     this.sortInfo.forEach( (itm) => {
-      const item = _.find(this._columns, { attr: itm.attr});
+      const item = _find(this._columns, { attr: itm.attr});
       item.sort = itm.sortDir;
     });
     // format the data if there are formatters.
@@ -72,14 +73,14 @@ export class AdvancedTableComponent implements OnInit {
    */
   private toggleSort(col: InColumn) {
     // console.log(col, arguments);
-    const existingSort: string = col.sort; //  _.find(this.sortInfo, {attr: col.attr});
+    const existingSort: string = col.sort; //  _find(this.sortInfo, {attr: col.attr});
     if (! existingSort) {
       col.sort = 'asc';
     }else {
       col.sort = this.toggleSortOrder(existingSort);
     }
     // Do actual sorting of data with new sort order
-    this.data = _.orderBy(this.data, col.attr, col.sort);
+    this.data = _orderBy(this.data, col.attr, col.sort);
     // FIXME remove sort information on all other columns.
     this.sortInfo = null;
     this._columns.forEach( col1 => {
