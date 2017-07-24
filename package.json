@@ -1,6 +1,6 @@
 {
   "name": "ngx-advanced-table",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "A simple yet feature packed Table rendering component for Angular 2+",
   "main": "./bundles/ngx-advanced-table.umd.js",
   "module": "./ngx-advanced-table.es5.js",
