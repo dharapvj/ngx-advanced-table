@@ -22,6 +22,68 @@ Advanced table component for Angular(2+).
 * [X] Column Formatters
 * [ ] Row Selection
 * [ ] Row Event hooks
+* [ ] Re-render notification with new data (Observable?)
+
+## Usage
+
+* include the component in your project
+
+````shell
+npm i ngx-advanced-table -S
+````
+
+* include the `AdvancedTableModule` in your AppModule.
+````ts
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AdvancedTableModule } from 'ngx-advanced-table';
+
+import { AppComponent }  from './app.component';
+
+@NgModule({
+  imports:      [ BrowserModule, AdvancedTableModule],
+  declarations: [ AppComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+
+````
+* declare the component in you component template
+````html
+<advanced-table [data]="mydata" [columns]="mycolumns" [sortInfo]="sortInfo"></advanced-table>
+````
+* Pass on data to the table component in your TS file.
+````ts
+  constructor() {
+    this.mycolumns = [
+      {attr: 'select', display: 'Sel', checkbox: true},
+      {attr: 'age', display: 'Age', align: Align.Right, checkbox: true },
+      {attr: 'fName', display: 'First Name', align: Align.Center,
+        formatter: (itm: string) => {
+          // console.log('my formatter', itm);
+          return itm.toUpperCase();
+        }
+      },
+      {attr: 'lName', display: 'Last Name', align: Align.Left},
+      {attr: 'doj', display: 'Date of Joining', align: Align.Right,
+        formatter: (itm: Date) => {
+          return '' + itm.getFullYear();
+        }
+      }
+    ];
+    this.mydata =  [
+      {age: 40, fName: 'Ravi', lName: 'Kumar', doj: new Date('2011-10-19')},
+      {age: 20, fName: 'Vijay', lName: 'Dharap', doj: new Date('2011-10-20')},
+      {age: 20, fName: 'Avinash', lName: 'Dongre', doj: new Date('2011-10-21')},
+      {age: 50, fName: 'Sanjay', lName: 'Das', doj: new Date('2011-10-22')}
+    ];
+    this.sortInfo = [
+      {attr: 'age', sortDir: 'desc'},
+      {attr: 'fName', sortDir: 'asc'}
+    ];
+  }
+
+````
 
 #### To release (just for my own reference)
 
