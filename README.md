@@ -1,5 +1,5 @@
 # NgAdvancedTable
-FIXME [![Build Status][travis-badge]][travis-badge-url]
+[![Build Status][travis-badge]][travis-badge-url][![npm version](https://badge.fury.io/js/ngx-advanced-table.svg)](https://badge.fury.io/js/ngx-advanced-table) 
 
 Advanced table component for Angular(2+).
 
@@ -31,5 +31,5 @@ npm run build
 npm publish dist/ --registry http://registry.npmjs.org
 ````
 
-[travis-badge]: https://travis-ci.org/filipesilva/angular-quickstart-lib.svg?branch=master
-[travis-badge-url]: https://travis-ci.org/filipesilva/angular-quickstart-lib
+[travis-badge]: https://travis-ci.org/dharapvj/ngx-advanced-table.svg?branch=master
+[travis-badge-url]: https://travis-ci.org/dharapvj/ngx-advanced-table
