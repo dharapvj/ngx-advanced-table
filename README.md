@@ -92,6 +92,7 @@ git commit
 npm run release
 npm run build
 npm publish dist/ --registry http://registry.npmjs.org
+verify travis page
 ````
 
 [travis-badge]: https://travis-ci.org/dharapvj/ngx-advanced-table.svg?branch=master
