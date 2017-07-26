@@ -1,6 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-// import { orderBy as _orderBy, map as _map, find as _find } from 'lodash';
-// import * as _ from 'lodash';
 import { orderBy as _orderBy, map as _map, find as _find } from 'lodash-es';
 
 import { SortInfo, Column, Align } from './table-def';
@@ -93,4 +91,5 @@ export class AdvancedTableComponent implements OnInit {
   toggleSortOrder(sort: string): 'asc'|'desc' {
     return sort === 'asc' ? 'desc' : 'asc';
   }
+
 }

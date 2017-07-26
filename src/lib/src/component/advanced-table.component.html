@@ -5,11 +5,10 @@
     </th></tr>
   </thead>
   <tbody>
-    <tr *ngFor="let d of data; let di = index">
-      <td *ngFor="let c of columns; let ci = index" class="align {{c.align}}">
-        <input *ngIf="c.checkbox" type="checkbox">
-        {{ d[c.attr] }}
-      </td>
-    </tr>
+    <tr *ngFor="let d of data;let o = odd; let e = even;" [ngClass]="{
+            'odd-row': o,
+            'even-row': e
+          }"
+      adv-table-row [columns]="columns" [rowDatum]="d"></tr>
   </tbody>
 </table>

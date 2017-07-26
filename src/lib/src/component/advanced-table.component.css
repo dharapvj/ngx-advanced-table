@@ -1,9 +1,39 @@
 table {
-  border-collapse: collapse;
-  border-spacing: 0px;
+    border-collapse: separate;
+    border-spacing: 0;
 }
-table, th, td {
-  border: 1px solid lightgray;
+
+table tr th{
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 2px 5px;
+}
+
+table tr th:first-child{
+    border-left: 1px solid #ccc;
+}
+table tr th {
+    background: #eee;
+    text-align: left;
+}
+table tr th,
+table tr:first-child td
+{
+    border-top: 1px solid #ccc;
+}
+table tr:first-child th:first-child,
+table.Info tr:first-child td:first-child {
+    border-top-left-radius: 6px;
+}
+table tr:first-child th:last-child,
+table.Info tr:first-child td:last-child {
+    border-top-right-radius: 6px;
+}
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 6px;
+}
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 6px;
 }
 
 .header{
@@ -11,24 +41,18 @@ table, th, td {
   float: left;
 }
 
-th{
-  padding: 0 4px;
-}
-
-td{
-  padding: 0 3px;
-}
-tbody > tr:nth-child(odd){
+.odd-row{
   background-color: #edf0e3;
 }
-tbody > tr:nth-child(even){
+.even-row{
   background-color: white;
 }
-
-.align.center { text-align: center; }
-.align.left { text-align: left; }
-.align.right { text-align: right; }
-
+.odd-row:hover{
+  background-color: #bbb;
+}
+.even-row:hover{
+  background-color: #ccc;
+}
 .sort-ind{
   width: 0; 
   height: 0; 

@@ -1,0 +1,17 @@
+.align.center { text-align: center; }
+.align.left { text-align: left; }
+.align.right { text-align: right; }
+
+:host(.selected) {
+  background-color: #CAFFFC;
+}
+
+td {
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 2px 5px;
+}
+
+td:first-child {
+    border-left: 1px solid #ccc;
+}

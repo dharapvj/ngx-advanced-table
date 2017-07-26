@@ -20,12 +20,13 @@ Advanced table component for Angular(2+).
 * [ ] Using Generics so that the DataType of data can be intelligently used?
 * [ ] Scrollable Table with Fixed headers
 * [X] Column Formatters
-* [ ] Row Selection
+* [X] Row Selection (using checkbox)
 * [ ] Row Event hooks
 
 #### To release (just for my own reference)
 
 ````
+git commit
 npm run release
 npm run build
 npm publish dist/ --registry http://registry.npmjs.org

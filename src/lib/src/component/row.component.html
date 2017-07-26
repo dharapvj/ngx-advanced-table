@@ -1,0 +1,4 @@
+<td *ngFor="let c of columns; let ci = index" class="align {{c.alignClass}}">
+  <input *ngIf="c.checkbox" type="checkbox" (change)="rowSelToggle(rowDatum)">
+  {{ rowDatum[c.attr] }}
+</td>

@@ -14,7 +14,7 @@ export class AppComponent {
   constructor() {
     this.mycolumns = [
       {attr: 'select', display: 'Sel', checkbox: true},
-      {attr: 'age', display: 'Age', align: Align.Right, checkbox: true },
+      {attr: 'age', display: 'Age', align: Align.Right/* , checkbox: true */ },
       {attr: 'fName', display: 'First Name', align: Align.Center,
         formatter: (itm: string) => {
           // console.log('my formatter', itm);
