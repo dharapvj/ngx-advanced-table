@@ -1,5 +1,8 @@
 # NgAdvancedTable
-[![Build Status][travis-badge]][travis-badge-url][![npm version](https://badge.fury.io/js/ngx-advanced-table.svg)](https://badge.fury.io/js/ngx-advanced-table) 
+[![Build Status][travis-badge]][travis-badge-url]  [![npm version](https://badge.fury.io/js/ngx-advanced-table.svg)](https://badge.fury.io/js/ngx-advanced-table) https://david-dm.org/dharapvj/ngx-advanced-table.svg
+
+[![Dependency Status][david-badge]][david-badge-url]
+[![devDependency Status][david-dev-badge]][david-dev-badge-url]
 
 Advanced table component for Angular(2+).
 
@@ -97,3 +100,7 @@ verify travis page
 
 [travis-badge]: https://travis-ci.org/dharapvj/ngx-advanced-table.svg?branch=master
 [travis-badge-url]: https://travis-ci.org/dharapvj/ngx-advanced-table
+[david-badge]: https://david-dm.org/dharapvj/ngx-advanced-table.svg
+[david-badge-url]: https://david-dm.org/dharapvj/ngx-advanced-table
+[david-dev-badge]: https://david-dm.org/dharapvj/ngx-advanced-table/dev-status.svg
+[david-dev-badge-url]: https://david-dm.org/dharapvj/ngx-advanced-table?type=dev
